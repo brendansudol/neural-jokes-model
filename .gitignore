@@ -1,0 +1,9 @@
+# dependencies
+/venv
+
+# misc
+.DS_Store
+
+__pycache__
+
+/logs
