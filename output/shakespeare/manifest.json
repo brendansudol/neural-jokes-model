@@ -1,8 +1,4 @@
 {
-  "Variable": {
-    "filename": "Variable",
-    "shape": []
-  },
   "embedding": {
     "filename": "embedding",
     "shape": [

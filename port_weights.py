@@ -43,7 +43,7 @@ def dump_checkpoints(vocab, model_name, final_model):
     var_filenames_strs = []
 
     for name in var_to_shape_map:
-        if re.match(remove_variables_regex, name) or name == 'global_step':
+        if re.match(remove_variables_regex, name) or name in ['global_step', 'Variable']:
             print('Ignoring ' + name)
             continue
 

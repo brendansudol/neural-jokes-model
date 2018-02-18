@@ -197,7 +197,7 @@ def train(args):
                     checkpoint_path = os.path.join(args.save_dir, model_name)
                     saver.save(sess, checkpoint_path, global_step=e * data_loader.num_batches + b)
                     final_model = '{}-{}'.format(model_name, e * data_loader.num_batches + b)
-                    print("model saved to {}".format(checkpoint_path))
+                    print("model_checkpoint: {}".format(final_model))
 
     # get the vocab
     model_vocab = get_vocab(model_name)
